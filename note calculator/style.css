@@ -1,0 +1,128 @@
+
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #e4c144
+}
+body{
+    background-color: #693f27;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+h1{
+    font-family: sans-serif;
+    
+    margin-bottom: 50px;
+    position: relative;
+    margin: 10vh auto;
+}
+
+.note{
+    background-color: #c24b39;
+    height: 100px;
+    min-width: 275px;
+    margin: auto;
+    font-weight: bolder;
+
+    font-size: 2rem;
+}
+.calculator{
+    font-weight: bold;
+    position: relative;
+    bottom: 10vh;
+}
+p{
+    position: relative;
+    top: 50px;
+    left:90px;
+}
+.buttons{
+    background-color:#df7943;
+    min-width: 275px;
+    margin: auto;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+    grid-template-areas: "r r q q"
+                         "l k j i"
+                         "h g f e"
+                         "d c b a"
+                         
+                         ;
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+.items{
+    
+    text-align: center;
+    padding-top: 25px;
+}
+.items:hover{
+    cursor: pointer;
+}
+.items:active{
+    cursor: pointer;
+    background-color: firebrick;
+    opacity: 0.5;
+}
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+.f{
+    grid-area: f;
+}
+.g{
+    grid-area: g;
+}
+.h{
+    grid-area: h;
+}
+.i{
+    grid-area: i;
+}
+.j{
+    grid-area: j;
+}
+.k{
+    grid-area: k;
+}
+.l{
+    grid-area: l;
+}
+.r{
+    grid-area: r;
+    padding: 25px;
+}
+.q{
+    grid-area: q;
+    padding: 25px;
+}
+h3{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
