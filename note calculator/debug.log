@@ -1,3 +1,0 @@
-[1225/113133.154:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
-[1225/143127.950:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\LENOVO\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\eab8dacc-f259-4ef2-8e62-cad59b95e6d2: Le chemin d’accès spécifié est introuvable. (0x3)
-[1225/143130.982:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: L’opération a réussi. (0x0)
