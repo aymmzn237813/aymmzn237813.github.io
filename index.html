@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0bebbe016a.js" crossorigin="anonymous"></script>
+    <title>home </title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="ETI-Logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <div id="marker"></div>
+            <a href="#" class="home a">Home</a>
+            <a href="#" class="a">About Us</a>
+            <a href="#" class="a">Our Services</a>
+            <a href="#" class="a">Responsibilities</a>
+            <a href="#" class="a">Country</a>
+            <a href="#" class="apply">Apply</a>
+            
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="circle"></div>
+        <div class="discription">
+            <h2 class="items">We Help to <span>Build</span><br> Your Dream</h2>
+            <p class="items">We are always availed to consult on taking your higher<br>
+            education to the next level so you can stay competitive in the </p>
+            <div class="button">
+                <span>Apply Online</span>
+                <i class="fas fa-arrow-right"></i>
+                
+            </div>
+            <div class="socialmedia">
+                
+                    <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <a href="#"><i class="fab fa-instagram"></i></a></li>
+                
+            </div>
+        </div>
+        <img src="Capture-fremovebg-preview.png" alt="">
+    </section>
+    <section class="swiper-container1">
+        <div class="title">
+            <span>FEATURED UNIVERSITIES</span>
+        </div>
+        <div class="mybody">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="universities/au-mu.png" alt="">
+                        <img src="universities/au-csu.png" alt="">
+                        <img src="universities/au-un-removebg-preview.png" alt="">
+                        <img src="universities/au-ltu.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="universities/au-cdu-removebg-preview.png" alt="">
+                        <img src="universities/au-rmit-removebg-preview.png" alt="">
+                        <img src="universities/au-mc.png" alt="">
+                        <img src="universities/au-fu-removebg-preview.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="universities/au-uw.png" alt="">
+                        <img src="universities/ca-dc-removebg-preview.png" alt="">
+                        <img src="universities/ca-fic-removebg-preview.png" alt="">
+                        <img src="universities/ca-lu.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="universities/ca-tru-removebg-preview.png" alt="">
+                        <img src="universities/ca-unb-removebg-preview.png" alt="">
+                        <img src="universities/ca-upei-removebg-preview.png" alt="">
+                        <img src="universities/ca-wlu-removebg-preview.png" alt="">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+                    
+        </div>
+        </div>
+    </section>
+    <section class="fj">
+        
+    </section>
+    <footer>
+        <div class="first-side">
+            <a href="#"><img src="Capture_d_écran_2021-01-14_180335-removebg-preview.png" alt="logo" class="logo"></a>
+            <br>
+            <span>Concord Royal Court (3rd floor)</span>
+            <br>
+            <span>Dhanmondi, Dhaka 1209, Bangladesh.</span>
+            <br>
+            <span class="copy-right">© 2020 Executive Trade International.</span>
+        </div>
+        <div class="second-side">
+            <ul class="1">
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Responsibilities</li></a>
+                <a href="#"><li>Our Services </li></a>
+                <a href="#"><li>Contact</li></a>
+                
+            </ul>
+            <ul class="2">
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Responsibilities</li></a>
+                <a href="#"><li>Our Services </li></a>
+                <a href="#"><li>Contact</li></a>
+                
+            </ul>
+        </div>
+        <div class="last">
+            <ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-stop"></i></a>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        var marker = document.querySelector('#marker');
+        var item = document.querySelectorAll('nav .a');
+        var initial = document.querySelector('.home');
+        marker.style.left = initial.offsetLeft+ "px";
+        marker.style.width = initial.offsetWidth / 2 + "px";
+        console.log(item)
+        function indicator(e) {
+            marker.style.left = e.offsetLeft+ "px";
+            marker.style.width = e.offsetWidth / 2 + "px";
+            console.log(marker.style.left);
+            console.log(marker.style.width)
+            
+        }
+        item.forEach(link => {
+            link.addEventListener('mouseover', (e)=>{
+                
+                    indicator(e.target)
+                
+                
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 4){
+            counter = 1;
+          }
+        }, 5000);
+        </script>
+</body>
+</html>
