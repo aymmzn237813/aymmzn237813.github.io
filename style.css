@@ -592,7 +592,7 @@ h2{
     font-size: 20px;
 }
 .events{
-    height: 1000px;
+    
     width: 100%;
     position: relative;
     padding: 100px 10%;
@@ -603,11 +603,8 @@ h2{
     margin:  70px auto;
     position:  relative;
     width: 90%;
-    
-    
-    overflow: hidden;
-    
     box-sizing: border-box;
+    overflow: hidden;
     
 }      
 .dawer .i{
@@ -632,6 +629,8 @@ h2{
     height: 100%;
     width: 400%;
     display: flex;
+    transition:1s;
+    left: 0%;
 }
 .in{
     background-color: #fff;
@@ -701,3 +700,95 @@ h2{
     font-size: 14px;
     right: 10px;
 }
+.mnb{
+    border: 2px solid#d2d2d2;
+    background-color: #d2d2d2;
+    padding: 5px;
+    border-radius: 10px;
+    transition:  1s;
+    cursor: pointer;
+    margin-right: 30px;
+
+}
+.active{
+    border: 2px solid#798fff;
+    background-color: #798fff;
+    transform: scale(1.2);
+}
+
+.mb{
+    position: relative;
+    display: flex;
+    
+
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+.i{
+    margin-right: 50px;
+}
+.countries{
+    position: relative;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 85px 10%;
+}
+.ini{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    
+    margin: 0 20px;
+    
+    display:grid;
+    grid-template-areas: "a b c";
+    grid-column-gap: 5%;
+    
+}
+.ins{
+    
+    position: relative;
+    
+}
+.ins img{
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ins-text{
+    margin-top: 35px;
+    line-height: 25px;
+}
+.ins-text h4{
+    font-size: 22px;
+    font-weight: 400;
+    color:#425260;
+}
+.ins-text p{
+    color: #908ca9;
+}
+.countries .dawer{
+    border-radius: 20px;
+    margin: 0px auto;
+    margin-top: 70px;
+}
+.termin{
+    position: relative;
+    width: 100%;
+    height:50vh;
+    
+    padding: 70px 0 70px 0;
+}
+
+.haja{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 120px;
+    width: 50px;
+    background-color:#e8f8ef;
+    transform: skewX(-20deg);
+}
+
