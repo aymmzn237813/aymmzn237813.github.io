@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0bebbe016a.js" crossorigin="anonymous"></script>
     <title>home </title>
@@ -432,8 +433,8 @@
             
         </div>
         <div class="mb">
-            <div class="mnb " id="1" ></div>
-            <div class="mnb active" id="2" ></div>
+            <div class="mnb active" id="1" ></div>
+            <div class="mnb " id="2" ></div>
             <div class="mnb" id="3"></div>
             <div class="mnb" id="4"></div>
         </div>
@@ -444,7 +445,7 @@
             <p>Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae praesidia <br>
             firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.</p>
         </div>
-        <div class="dawer">
+        <div class="dawer"> 
             <div class = "dawer-container" id="k">
                 <div class=" ini">
                     <div class="ins">
@@ -578,6 +579,111 @@
                 causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.</p>
 
         </div>
+        <div class="myvirtual">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <div class="in">
+                            <div class="in-top">
+                                <div class="in-date">
+                                    <img src="tofla.PNG" alt="">
+                                </div>
+                                <div class="textj">
+                                    <p class="k">Harrison Phillips</p>
+                                    <br>
+                                    <p>Reporter</p>
+                                </div>
+                            </div>
+                            <div class="in-middle">
+                                <p>Nisi cumque in necessitatibus molestiae eaque
+                                    excepturi ab. Laboriosam ipsam voluptatem
+                                    voluptatibus labore quam nihil. Quasi occaecati quos
+                                    ratione quia aut molestiae velit et. Voluptatem id ea
+                                    dicta inventore et quo impedit repudiandae. Qui </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="in">
+                            <div class="in-top">
+                                <div class="in-date">
+                                    <img src="tfol.PNG" alt="">
+                                </div>
+                                <div class="textj">
+                                    <p class="k">Ainara Vergara</p>
+                                    <br>
+                                    <p>Landscape Architect</p>
+                                </div>
+                            </div>
+                            <div class="in-middle">
+                                <p>Aut consectetur voluptas. Voluptatem minus quo
+                                    voluptas in nulla iste. Fugiat alias sit sed dolorem quo.
+                                    Qui praesentium et doloribus minima neque. Facere
+                                    debitis sed est suscipit velit reprehenderit. Dolores
+                                    aliquid dolore consequuntur ex.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="in">
+                            <div class="in-top">
+                                <div class="in-date">
+                                    <img src="tfol2.PNG" alt="">
+                                </div>
+                                <div class="textj">
+                                    <p class="k">Niek Vergara</p>
+                                    <br>
+                                    <p>Landscape Architect</p>
+                                </div>
+                            </div>
+                            <div class="in-middle">
+                                <p class="m">Nisi cumque in necessitatibus molestiae eaque
+                                    excepturi ab. Laboriosam ipsam voluptatem
+                                    voluptatibus labore quam nihil. Quasi occaecati quos
+                                    ratione quia aut molestiae velit et. Voluptatem id ea
+                                    dicta inventore et quo impedit repudiandae. Qui </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="in">
+                            <div class="in-top">
+                                <div class="in-date">
+                                    <img src="tofla.PNG" alt="">
+                                </div>
+                                <div class="textj">
+                                    <p class="k">Harrison Phillips</p>
+                                    <br>
+                                    <p>Reporter</p>
+                                </div>
+                            </div>
+                            <div class="in-middle">
+                                <p>Nisi cumque in necessitatibus molestiae eaque
+                                    excepturi ab. Laboriosam ipsam voluptatem
+                                    voluptatibus labore quam nihil. Quasi occaecati quos
+                                    ratione quia aut molestiae velit et. Voluptatem id ea
+                                    dicta inventore et quo impedit repudiandae. Qui </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="fin">
+        
+            <p class="textq">Ready to chase your dreams?</p>
+            <div class="buto">
+                <span>Apply Online</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        
     </section>
     <footer>
         <div class="first-side">
@@ -647,5 +753,25 @@
         }, 5000);
     </script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 0,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    
+        });
+  </script>
 </body>
 </html>
